@@ -26,6 +26,7 @@ Client::Client(QWidget *parent) :
     defaultpath = QString(config.readLine());
     qDebug()<<defaultpath;
     config.close();
+    file = NULL;
 }
 
 Client::~Client()
